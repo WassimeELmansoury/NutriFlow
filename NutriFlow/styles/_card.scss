@@ -3,6 +3,8 @@
 body {
     background-color: variable.$bg-color;
     margin: 0;
+    height: 100%;
+    
     font-family: sans-serif;
 }
 
@@ -13,6 +15,8 @@ body {
     justify-content: space-between;
     height: 100vh;
     padding: 60px 0;
+    box-sizing: border-box;
+
 
     .logo-container img {
         width: 200px;
@@ -35,3 +39,37 @@ body {
         
     }
 }
+.HomePage{
+
+    .card-cat{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        display: flex;
+        justify-content: center;
+        background-color: variable.$color-primary;
+        width: 90%;
+        border-radius: variable.$primary-raduis;
+
+    }
+    .card-cat img{
+        justify-content: center;
+        background-color: variable.$color-primary;
+        width: 15px;
+        border-radius: variable.$primary-raduis;
+
+    }
+    .search-card {
+    
+        background-color:white;
+        width: 90%;    
+        border-radius: variable.$primary-raduis;
+        height: 70px;
+
+    }
+    .search-card img{
+        width: variable.$cat-icon-size;
+
+    }
+
+}
+
