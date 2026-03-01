@@ -1,59 +1,18 @@
-body {
-  background-color: #FFF7B3;
-  margin: 0;
-  height: 100%;
-  font-family: sans-serif;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 31 |             background-color: variable.$bg-color1;
+ *    |                               ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   styles\_card.scss 31:31  @use
+ *   styles\main.scss 2:1     root stylesheet */
 
-.welcome-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  padding: 60px 0;
-  box-sizing: border-box;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 31 \2502              background-color: variable.$bg-color1;\d\a    \2502                                ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\_card.scss 31:31  @use\a   styles\\main.scss 2:1     root stylesheet";
 }
-.welcome-screen .logo-container img {
-  width: 200px;
-}
-.welcome-screen .lower-image img {
-  width: 300px;
-}
-.welcome-screen .btn-next {
-  background-color: rgba(234, 130, 45, 0.5137254902);
-  color: black;
-  border: 2px solid black;
-  padding: 13px 100px;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.HomePage .card-cat {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  display: flex;
-  justify-content: center;
-  background-color: #F4F4F4;
-  width: 90%;
-  border-radius: 13px;
-}
-.HomePage .card-cat img {
-  justify-content: center;
-  background-color: #F4F4F4;
-  width: 15px;
-  border-radius: 13px;
-}
-.HomePage .search-card {
-  background-color: white;
-  width: 90%;
-  border-radius: 13px;
-  height: 70px;
-}
-.HomePage .search-card img {
-  width: 24px;
-}
-
-/*# sourceMappingURL=main.css.map */

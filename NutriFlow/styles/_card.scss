@@ -39,37 +39,100 @@ body {
         
     }
 }
-.HomePage{
 
-    .card-cat{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        display: flex;
-        justify-content: center;
-        background-color: variable.$color-primary;
-        width: 90%;
-        border-radius: variable.$primary-raduis;
-
-    }
-    .card-cat img{
-        justify-content: center;
-        background-color: variable.$color-primary;
-        width: 15px;
-        border-radius: variable.$primary-raduis;
-
-    }
-    .search-card {
-    
-        background-color:white;
-        width: 90%;    
-        border-radius: variable.$primary-raduis;
-        height: 70px;
-
-    }
-    .search-card img{
-        width: variable.$cat-icon-size;
-
-    }
-
+@mixin white-card {
+    background-color: white;
+    width: 92%;
+    border-radius: variable.$primary-raduis;
+    margin: 10px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+body {
+    background-color: variable.$bg-color;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    .logo-container {
+        width: 100px;
+        margin-bottom: 20px;
+        img { width: 100%; }
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .search-card {
+        @include white-card;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        height: 55px;
+
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+
+    // Categories Grid
+    .card-cat {
+        @include white-card;
+        padding: 15px 10px;
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px 5px; 
+            justify-items: center;
+
+            .category-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .icon-box {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #F4F4F4; 
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    img {
+                        width: 25px; 
+                        height: 25px;
+                        object-fit: contain;
+                    }
+                }
+
+                p {
+                    font-size: 10px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
