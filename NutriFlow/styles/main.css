@@ -1,9 +1,9 @@
-/* Error: unmatched "}".
- *     ,
- * 144 |     }
- *     |     ^
- *     '
- *   styles\_card.scss 144:5  @use
+/* Error: Undefined variable.
+ *    ,
+ * 31 |             background-color: variable.$bg-color1;
+ *    |                               ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   styles\_card.scss 31:31  @use
  *   styles\main.scss 2:1     root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 144 \2502      }\d\a     \2502      ^\a     \2575 \a   styles\\_card.scss 144:5  @use\a   styles\\main.scss 2:1     root stylesheet';
+  content: "Error: Undefined variable.\a    \2577 \a 31 \2502              background-color: variable.$bg-color1;\d\a    \2502                                ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\_card.scss 31:31  @use\a   styles\\main.scss 2:1     root stylesheet";
 }
