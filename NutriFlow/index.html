@@ -4,94 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriFlow</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
    <div id="bodyP"></div>
    
-   
-   
-         <main class="HomePage">
-            <header class="logo-container">
-               <img src="./image/home_1.png" alt="Logo App" class="logo">
-            </header>
-            <h1>What Do You Want To Cook Today ?</h1>
-               <div class="search-card">
-                  <img src="./image/search.png" alt="search icon">
-                  <input type="text" placeholder="Search Racipe">
-               </div>
-               <article class="card-cat">
+    <main class="app-container">
+        <header class="logo-container">
+            <img src="./image/home_1.png" alt="Logo" class="logo">
+        </header>
 
-               <div class="categories">
-                  <div>
-                     <img src="./image/Dessert.png" alt="Dessert">
-                     <p>Dessert</p>
-                  </div>
-                  <div>
-                     <img src="./image/dinner.png" alt="dinner">
-                     <p>dinner</p>
-                  </div>
-                  <div>
-                     <img src="./image/Lunch.png" alt="Lunch">
-                     <p>Lunch</p>
-                  </div>
-                  <div>
-                     <img src="./image/noodles.png" alt="noodles">
-                     <p>noodles</p>
-                  </div>
-                  <div>
-                     <img src="./image/burrito.png" alt="burrito">
-                     <p>noodles</p>
-                  </div>
-                  <div>
-                     <img src="./image/coffee-cup.png" alt="coffee">
-                     <p>coffee</p>
-                  </div>
-                  <div>
-                     <img src="./image/breakfast.png" alt="breakfast">
-                     <p>breakfast</p>
-                  </div>
-                  <div>
-                     <img src="./image/drink.png" alt="drink">
-                     <p>drink</p>
-                  </div>
-                  <div>
-                     <img src="./image/hot-soup.png" alt="hot-soup">
-                     <p>hot-soup</p>
-                  </div>
-                  <div>
-                     <img src="./image/fast-food.png" alt="fast-food">
-                     <p>fast-food</p>
-                  </div>
-               </div>
-            </article>
-         </main>
+        <h1>What Do You Want To Cook Today ?</h1>
 
-      </main>
-      <h2 class="section-title">Recommendation</h2>
-    <div class="recommendations-container">
-        <div class="recipe-card">
-            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-tomato-sauce-on-pasta.jpg" alt="Pasta">
-            <div class="recipe-info">
-                <h3>Spicy Garlic Linguini</h3>
-                <p>By David Carlis</p>
+        <div class="search-card">
+            <img src="./image/search.png" alt="search icon" class="search-icon">
+            <input type="text" placeholder="Search Recipe">
+        </div>
+
+        <section class="categories-grid">
+            <div class="cat-item"><img src="./image/breakfast.png" alt=""><p>Breakfast</p></div>
+            <div class="cat-item"><img src="./image/dinner.png" alt=""><p>Dinner</p></div>
+            <div class="cat-item"><img src="./image/Dessert.png" alt=""><p>Dessert</p></div>
+            <div class="cat-item"><img src="./image/drink.png" alt=""><p>Drink</p></div>
+            <div class="cat-item"><img src="./image/fast-food.png" alt=""><p>Fast Food</p></div>
+            <div class="cat-item"><img src="./image/coffee-cup.png" alt=""><p>Coffee</p></div>
+            <div class="cat-item"><img src="./image/noodles.png" alt=""><p>Noodles</p></div>
+            <div class="cat-item"><img src="./image/burrito.png" alt=""><p>Sandwichs</p></div>
+            <div class="cat-item"><img src="./image/hot-soup.png" alt=""><p>Soup</p></div>
+            <div class="cat-item"><img src="./image/Lunch.png" alt=""><p>Lunch</p></div>
+        </section>
+
+        <h2 class="section-title">Recommendation</h2>
+        <div class="recommendations-container">
+            <div class="recipe-card">
+                <div class="fav-icon">⭐</div>
+                <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-tomato-sauce-on-pasta.jpg" alt="Pasta">
+                <div class="recipe-info">
+                    <h3>Spicy Garlic Linguini</h3>
+                    <p>By David Carlis</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="fav-icon">⭐</div>
+                <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pizza-with-salami-and-cheese.jpg" alt="Pizza">
+                <div class="recipe-info">
+                    <h3>Cheesy Pepperoni</h3>
+                    <p>By Marco Polo</p>
+                </div>
             </div>
         </div>
-        <div class="recipe-card">
-            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pizza-with-salami-and-cheese.jpg" alt="Pizza">
-            <div class="recipe-info">
-                <h3>Cheesy Pepperoni</h3>
-                <p>By Marco Polo</p>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <nav class="bottom-nav">
-        <div class="nav-item active"><img src="./image/home_icon.png" alt="Home"></div>
-        <div class="nav-item"><img src="./image/search_icon.png" alt="Search"></div>
-        <div class="nav-item"><img src="./image/star_icon.png" alt="Fav"></div>
-        <div class="nav-item"><img src="./image/user_icon.png" alt="Profile"></div>
+        <div class="nav-item active"><img src="./image/home_icon.png" alt=""></div>
+        <div class="nav-item"><img src="./image/search_icon.png" alt=""></div>
+        <div class="nav-item"><img src="./image/star_icon.png" alt=""></div>
+        <div class="nav-item"><img src="./image/user_icon.png" alt=""></div>
     </nav>
 </body>
-   <script type="module" src="./src/main.js"></script>
 </html>

@@ -1,8 +1,9 @@
-import { renderStarPage } from "./ui/render.js"
+import { renderStarPage, renderHomePage } from "./render.js";
 
-renderStarPage()
-let btn=document.querySelector(".btn-next")
-btn.addEventListener("click",()=>{
-    console.log("next");
-    
-})
+renderStarPage();
+
+document.getElementById("bodyP").addEventListener("click", (event) => {
+    if (event.target.classList.contains("btn-next")) {
+        renderHomePage(); 
+    }
+});

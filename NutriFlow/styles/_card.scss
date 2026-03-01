@@ -93,17 +93,17 @@ body {
         }
     }
 
-    // Categories Grid
     .card-cat {
         @include white-card;
         padding: 15px 10px;
 
         .categories {
-            display: grid;
+            display: grid; 
             grid-template-columns: repeat(5, 1fr);
             gap: 15px 5px; 
+            width: 100%;
             justify-items: center;
-
+}
             .category-item {
                 display: flex;
                 flex-direction: column;
@@ -111,14 +111,21 @@ body {
                 text-align: center;
 
                 .icon-box {
-                    width: 50px;
-                    height: 50px;
+                    width: 55px;  
+                    height: 55px;
                     background-color: #F4F4F4; 
-                    border-radius: 12px;
+                    border-radius: 12px; 
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 5px;
+                    margin-bottom: 8px;
+
+    img {
+        width: 30px; 
+        height: 30px;
+        object-fit: contain;
+    }
+}
 
                     img {
                         width: 25px; 
@@ -134,5 +141,3 @@ body {
                 }
             }
         }
-    }
-}
